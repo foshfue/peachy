@@ -87,13 +87,7 @@ export function Peach({ anim, ...props }) {
 
 
     useFrame(() => {
-        if (isMd) {
-            boxRef.current.position.x = -2 * anim.x
-            boxRef.current.position.y = -1.5 * anim.y
-            boxRef.current.scale.x = anim.scale
-            boxRef.current.scale.y = anim.scale
-            boxRef.current.scale.z = anim.scale
-        }
+
         if (isLg) {
             boxRef.current.position.x = -2 * anim.mx
             boxRef.current.position.y = -1.5 * anim.my
@@ -109,6 +103,12 @@ export function Peach({ anim, ...props }) {
             boxRef.current.scale.y = anim.ms
             boxRef.current.scale.z = anim.ms
 
+        } else {
+            boxRef.current.position.x = -2 * anim.x
+            boxRef.current.position.y = -1.5 * anim.y
+            boxRef.current.scale.x = anim.scale
+            boxRef.current.scale.y = anim.scale
+            boxRef.current.scale.z = anim.scale
         }
         // console.log("boxRef.current", boxRef.current)
 
