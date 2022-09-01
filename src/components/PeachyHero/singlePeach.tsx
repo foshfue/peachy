@@ -190,7 +190,10 @@ function SinglePeach() {
                 end: 'bottom bottom',
                 snap: 1,
                 scrub: 1,
-                markers: true
+                markers: true,
+                onEnter: () => console.log("girdi 1"),
+                onLeave: () => console.log("onLeave 1")
+            
             }
         })
         tl1.to(animable, {

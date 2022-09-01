@@ -62,6 +62,8 @@ const Home: NextPage = () => {
             scrub: true,
             markers: true,
             // onEnter: self => console.log("enter", self),
+            onEnter: () => console.log("girdi 3"),
+            onLeave: () => console.log("onLeave 3")
           }
         })
         // tl.to(peachRef.current, { scale: 1.2 }, "+=0.2")
