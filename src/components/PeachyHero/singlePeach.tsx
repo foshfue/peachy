@@ -212,7 +212,7 @@ function SinglePeach() {
         //     }
         // })
 
-    }, [])
+    }, [animable])
 
 
     return (
