@@ -126,9 +126,9 @@ const Home: NextPage = () => {
                 <SinglePeach />
               </div>
 
-              <div className="hero-fin absolute h-full w-full">
+              {/* <div className="hero-fin absolute h-full w-full">
                 <PeachyHero />
-              </div>
+              </div> */}
 
 
               {/* <div className="hero-peach absolute h-full w-full -top-10 "> */}
