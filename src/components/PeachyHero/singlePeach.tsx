@@ -4,9 +4,11 @@ import { useRef, useState, Suspense, useEffect } from 'react'
 import * as THREE from 'three'
 import { useGLTF, Environment, OrbitControls, Float } from '@react-three/drei'
 import { EffectComposer, DepthOfField, Bloom } from '@react-three/postprocessing'
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 import { gsap } from "../../utils/gsap";
 
+gsap.registerPlugin(ScrollTrigger);
 
 // function Box({ z, props }) {
 //     const [clicked, setClicked] = useState(false)
@@ -193,7 +195,7 @@ function SinglePeach() {
                 markers: true,
                 onEnter: () => console.log("girdi 1"),
                 onLeave: () => console.log("onLeave 1")
-            
+
             }
         })
         tl1.to(animable, {
